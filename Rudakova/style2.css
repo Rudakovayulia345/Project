@@ -1,0 +1,26 @@
+#out{
+    color: blueviolet;
+}
+p[align="Left"]{
+    color: aqua;
+}
+.sbox{
+    background: #f0f0f0;
+    color: blue;
+}
+h1+p{
+    color: rgd(218,135,33);
+}
+div p{
+    color: rgd(113,27,73);
+}
+p{
+    color: red;
+}
+*{
+    color: black;
+}
+h2{
+    color: rgba(255, 255,0, 0.5);
+    background: rgb(0, 0, 0)
+}
