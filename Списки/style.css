@@ -1,0 +1,52 @@
+ol li.red{
+    color: red;
+    list-style-type: decimal;
+    font-size: 20px;
+}
+ul li.green{
+    color: green;
+}
+ol{
+    list-style-type: circle;
+}
+.padding{
+    background-color: aqua;
+    padding: 10px;
+}
+.margin{
+    background-color: blueviolet;
+    margin: 10px;
+}
+ol.element{
+    list-style-type: none;
+    counter-reset: number;
+}
+/*псевдоэлемент*/
+ol.element li::before{ 
+    content: counter(number)')';
+    counter-increment: number;
+}
+blockquote::before{
+    content: "<<<<";
+}
+blockquote::after{
+    content: ">>>>";
+}
+ul.element2{
+    list-style-type: none;
+    font-style: italic;
+}
+ul.element2 li::before{
+    content: '-';
+    color: #04b548;
+    background-color: pink;
+}
+img{
+    border: 10px red solid;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #04b548;
+    border-radius: 100px;
+}
