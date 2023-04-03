@@ -1,0 +1,26 @@
+/*внешние границы всей таблицы*/
+table{
+    border: 30px solid black;
+    /*border-collapse: collapse;*/
+    border-spacing: 10px;
+    border-radius: 30px;
+    border-image: url("img/morning.jfif") 30;
+    /*empty - позволяет скрыть значение ячейки и границ, в HTML тоже надо убрать значение*/
+    empty-cells: hide;
+}
+/*границы ячеек заголовков таблицы*/
+th{
+    border: 1px solid red;
+}
+/* границы ячеек основной части */
+td{
+    border: 1px solid blue;
+}
+#uniq{
+    width: 130px;
+    height: 120px;
+    text-align: right;
+    vertical-align: bottom;
+    background-color: chartreuse;
+    background-image: url(img/morning.jfif);
+}

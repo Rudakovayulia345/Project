@@ -1,0 +1,16 @@
+table{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid red;
+}
+td{
+    border: 1px solid blue;
+}
+caption{
+    text-align: center;
+    caption-side: top;
+}
+td:nth-child(odd){
+    font-size: x-large;
+}
