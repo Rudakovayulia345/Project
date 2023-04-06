@@ -1,0 +1,16 @@
+div.min-w{
+    background-color: aqua;
+    width: 80%;
+    height: 200px;
+    min-width: 300px;
+}
+.max-w{
+    background-color: rgb(255, 0, 76);
+    width: 60%;
+    height: 200px;
+    min-width: 300px;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
