@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin:0;
+}
+#callback{
+    width: 300px;
+    height: 150px;
+    background-color: gray;
+}
+#callback p{
+    color: #fff;
+    padding: 30px;
+}
+#callback::after{
+    content: 'Обратная связь';
+    background-color: pink;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    width: 150px;/*Ширина псевдоэлемента равна высоте блока, т.к. будет поворот*/
+    position: absolute;
+    left: 300px;/*позиция слева равна ширине блока #callback*/
+    top: 150px;/*позиция сверху равна ширине блока #callback*/
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
