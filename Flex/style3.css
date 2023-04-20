@@ -1,0 +1,24 @@
+.flex-container{
+    width: 70px;
+    height: 240px;
+    border: 1px solid #333;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.flex-container div{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.red{
+    background: red;
+    border: 1px solid black;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: green;
+}
