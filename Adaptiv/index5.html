@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-attachment</title>
+    <style>
+        body{ display: flex; gap: 10px; height: 300vh;}
+        div{
+            width: 300px; height: 300px; overflow: scroll; background-size: 50%; border: 2px solid black; background-image: url(img/123.jpg); background-repeat: no-repeat;}
+        .left{ background-attachment: fixed;}
+        .middle{ background-attachment: local;} 
+        .right{ background-attachment: scroll;}    
+       
+    </style>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="middle">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deleniti repudiandae? Quidem doloremque aliquid exercitationem architecto expedita officiis veniam consequuntur, ex error soluta, totam possimus est. Quos laboriosam repudiandae cupiditate consequatur quae voluptate libero eos quibusdam fuga dolorum ducimus veniam, eveniet molestiae consectetur temporibus iusto! Necessitatibus numquam deleniti dolorem eligendi, explicabo obcaecati! Temporibus cupiditate repudiandae, culpa sint minus odit quos delectus laboriosam ea sequi commodi nostrum est, adipisci doloremque! Alias, ut rerum quibusdam magni unde praesentium? Possimus rem culpa ratione mollitia cumque, quaerat nam. Quam aperiam doloremque quia quaerat porro, assumenda sit, placeat adipisci nisi et ratione est consequatur. Ut.</p>
+    </div>
+    <div class="right">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis neque quod aperiam minus architecto atque excepturi ad repellendus nemo quaerat odio facilis illum totam ex rerum dolores veritatis enim nam, repudiandae facere quos eos doloremque illo sed. Quibusdam quod nam, similique eius reprehenderit omnis iusto magni culpa provident et nostrum ullam minus voluptatem asperiores quas repellat error deleniti aliquam perspiciatis officia numquam nemo! Rem quasi distinctio non ullam dolorum debitis velit? Vitae at dolore mollitia debitis modi, eligendi sint similique ex officiis totam, optio ut alias nisi autem tempore earum pariatur temporibus fugiat in commodi nemo nulla error nihil. Ipsa.</p>
+    </div>
+</body>
+</html>
