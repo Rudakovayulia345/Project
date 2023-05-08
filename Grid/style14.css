@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    background-color: rgb(8, 8, 83);
+    color: #fff;
+    width: 900px;
+    height: 50px;
+    font-size: 20px;
+}
+div{
+    padding: 10px;
+}
+.item3{
+    position: relative;
+    left: 650px;
+}
