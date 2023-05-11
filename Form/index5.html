@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/search" >
+        <div>
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname">
+        </div>
+        <div>
+            <input type="password" name="pass" value=""placeholder="Пароль">
+            <input type="text" name="phone" value=""placeholder="Телефон">
+            <input type="text" name="email" value=""placeholder="Email">
+        </div>
+        <div>
+           <label>Дата рождения</label> <input type="date"> 
+        </div>
+    
+    <form>
+        <input type="checkbox" name="hobby[]" value="rad1"> Спорт <br>
+        <input type="checkbox" name="hobby[]" value="rad2"> Путешествия  <br>
+        <input type="checkbox" name="hobby[]" value="rad3"> Книги <br>
+     </form>
+     <form>
+        <input type="radio" name="sex" value="rad1"> Mужчина <br>
+        <input type="radio" name="sex" value="rad2"> Женщина  <br>        
+    </form>
+    <input type="submit" value="Отправить">
+</form>
+
+    
+    
+</body>
+</html>
