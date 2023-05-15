@@ -19,6 +19,7 @@ input{
     width: 150px;
     box-sizing: border-box;
     border: 1px solid #777;
+    outline: none;
 }
 input:focus{
     border-color: rgb(25.11.100);
@@ -28,7 +29,13 @@ input[type="checkbox"]{
     width: 120px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 10px;    
+}
+input[type="radio"]{
+    width: auto;
+}
+input[id="submitBtn"]{
+    display: block;
 }
 label span{
     width: 90px;
