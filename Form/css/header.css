@@ -24,7 +24,7 @@ h1{
     font-size: 3em;
     animation: moveleft .5s ease-out .3s;
 }
-h2{
+header h2{
     font-size: 2em;
     animation: moveRight .5s ease-out .8s;
 }
