@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav text-uppercase">
+                        <!--добавляем класс active к пункту меню текущей страницы-->
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-md mt-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Find us here</h2>
+                        <div class="embed-responsive embed-responsive-21by9">                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5297.484718044528!2d35.0435772!3d48.4038907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfb61c7ac179f%3A0xd8632f7083a8373b!2z0JPRgNGD0LfQvtCy0L7QtSDRgtCw0LrRgdC4ICJHcnV6b3ZvemthIiB8INCT0YDRg9C30L7Qv9C10YDQtdCy0L7Qt9C60Lgg0JTQvdC10L_RgCAxLSA1INGC0L7QvdC9IHwg0JPRgNGD0LfRh9C40LrQuCDQlNC90LXQv9GAIHwg0JrQstCw0YDRgtC40YDQvdGL0LUsINC-0YTQuNGB0L3Ri9C1INC_0LXRgNC10LXQt9C00YsgfCDQn9Cw0YDQuiDQs9GA0YPQt9C-0LLRi9GFINCw0LLRgtC-Lg!5e0!3m2!1sru!2sby!4v1685382221885!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h2>Address</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Ukraine, ZP</li>
+                            <li class="list-group-item">Phone: 9380050-444-22-33</li>
+                            <li class="list-group-item">E-mail: info@company.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Contact us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile</label>
+                        <input type="text" class="form-control" name="mobile" id="mobile">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <textarea class="form-control" name="subject" id="subject"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light text-light bg-dark text-uppercase" name="send">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluidmt-5 pt-3 bg-dark">
+        <div class="row row-cols-1">
+            <div class="col">
+                <div class="text-center">
+                    <a href="#" class="btn btn-light text-light bg-dark text-uppercase">Facebook</a>
+                    <a href="#" class="btn btn-light text-light bg-dark text-uppercase">Twitter</a>
+                    <a href="#" class="btn btn-light text-light bg-dark text-uppercase">Instagram</a>
+                </div>
+            </div>
+            <div class="col text-center text-light mt-2">
+                <p>&copy; 2020 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
