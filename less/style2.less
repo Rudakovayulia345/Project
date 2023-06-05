@@ -1,0 +1,7 @@
+@pad1: 20px;
+@pad2: 15px;
+div{
+    background-color: aqua;
+    /* так как условие ложно для отступов применитьтся значение @pad2*/
+    padding: if((@pad1<@pad2), @pad1, @pad2);
+}
