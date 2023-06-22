@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number= +prompt('Сколько врагов Вы убили? Введите число');
+        switch (number){
+            case 1: alert ('Вам начислено 100 очков');
+            break;
+
+            case 3: alert ('Вам начислено 400 очков');
+            break;
+
+            case 5: alert ('Вам начислено 700 очков');
+            break;
+
+            case 10: alert ('Вам начислено 1000 очков');
+            break;
+
+            //default: alert('Неизвестное значение '+ number*100);
+
+            default: alert(`Вам начислено ${number*100} очков опыта`);
+        //обратные кавычки, использованные выше позволяют получать значение переменной         
+        }
+        console.log (typeof number);
+    </script>
+</body>
+</html>
