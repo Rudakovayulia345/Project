@@ -68,7 +68,7 @@
         console.log(sum); 
 </script>-->
 
-<script>//Дано число N найти сумму всех четных чисел от 1 не превосходящих N используя WHILE
+<!--script>//Дано число N найти сумму всех четных чисел от 1 не превосходящих N используя WHILE
     let n=1;
     let N=20;
     let sum = 0;
@@ -79,6 +79,56 @@
             n++; 
         }
         console.log(sum); 
+</script
+<script>
+    let j =1;  
+        while(j!=11){
+           console.log(`${j}*5`, j*5);
+           j++;
+        }
+
+</script>
+<script>   
+    let j=0;
+        do{
+            if(j>0) {
+                alert("Введите еще раз");
+            }
+            number= prompt('Введите число больше 100');           
+            j++;
+            
+        } while(number<100);      
+      
+</script>
+<script>
+    var sum=0;
+    debugger;
+    while (true)
+    {
+        var value= +prompt ('Введите число', ' ');
+        if(!value)
+        {break;}
+        sum +=value;
+    }
+    alert ('Сумма:' +sum);
+</script>-->
+
+<script> //Дано число. Определить является ли оно простым (делится на 1 и на само себя)
+let n = +prompt ("Введите число");
+let isPrime = true; //булевская переменная, которая отвечает за критерий простоты
+for (let i = 2; i < n; i++){
+    if (n % i ==0){
+        isPrime = false;
+        break;
+    }
+}
+if (isPrime){
+    console.log (n, "-Простое число");
+}
+else {
+    console.log (n, "-Составное число")
+}
+
 </script>
 
 </body>
