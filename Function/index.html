@@ -24,7 +24,7 @@
 
         console.log(message);
         showMessage();
-    </script>-->
+    </script>
     <script>        
         function summa1 (a, b){
             var sum = a + b;
@@ -36,5 +36,73 @@
         console.log('summa1', summa1 (1,2))
         console.log('summa2', summa2 (5,5))
     </script>
+    Аргументы по умолчанию. Пример см. ниже:
+    <script>
+        function summa(a,b=2){
+            return a+b;
+        }
+        alert(summa(3,4));//7
+        alert(summa(3));//5
+        alert(summa());//error (NaN)
+    </script>
+    Опраторы нулевого значения. Пример см.ниже:
+    <script>
+        let user; 
+        alert (user ?? 'Аноним');//Аноним (user не существует)
+        alert(user);
+
+        let user='Иван';
+        alert (user ?? "Аноним");//Иван (user существует)
+    </script>`
+    <script>
+        debugger;
+        function checkAge (age){
+            if(age >=18){
+                return true;
+            }
+            else{
+                return confirm('А родители разрешили?');
+            }
+        }
+        checkAge(10);
+        console.log(checkAge(20));
+   </script>
+   Пример: записать функцию min (a,b), которая возвращает меньшее из числе a и b. См. ниже
+   <script>
+    debugger;
+    function min(a,b)
+    
+    {
+        if (a<b){
+            return a;
+        }
+        else{
+            return b;
+        }
+    }
+    console.log (min())    
+    }
+   </script>-->
+  Пример: записать функцию pow(x,n), которая возводит х в степень n и возвращает результат (см. ниже)
+  <script>
+    function pow (x,n){
+        debugger;
+        let result = x;
+        if (n<1){
+            alert(`Степень ${n} не поддерживается, используйте натуральное чсило`);
+            return;
+        }
+        else{
+            for(let i=1; i<n; i++){
+                result *=x;//result = result * x;
+            }
+            return result;
+        }
+    }
+    console.log(pow(2,0));
+    console.log(pow(2,3));
+  </script>
+    
+    
 </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Области видимости </title>
+</head>
+<body>
+    <!--<script>
+        function varTest(){
+            for (var i=0; i<3; i++){
+                console.log(i);
+            }
+            console.log('next', i);
+        }
+        varTest();
+    </script>
+    <script>
+        function doSomething(){
+            var myVar=1;
+            if(true){
+                var myVar=2;
+                console.log(myVar);
+            }
+            console.log(myVar);
+        }
+        doSomething();
+    </script>
+    <script>
+        function doSomething(){
+            let myVar=1;
+            if(true){
+                let myVar=2;
+                console.log(myVar);
+            }
+            console.log(myVar);
+        }
+        doSomething();
+    </script>
+    <script>
+        function hoist(){
+            a=20;
+            var b=100;
+        }
+        hoist();
+        console.log(a);
+        console.log(b);
+        /*Доступ как к глобальной переменной внефункции hoist() выводит: 20*/
+        /*Как только b была назначена, она заключается в рамках области видимости функции hoist(). Что означает мы не можем вывести её в рамках функции
+    </script>
+    <script>
+        console.log(hoist);//Вывод: undefined
+        var hoist = 'The variable has been hoist.';
+
+        var hoist;
+        console.log(hoist);//Вывод: undefined
+
+    </script>
+    <script>
+        hoisted();// Вывод "This function has been hoisted."
+        function hoisted(){
+            console.log('This function has been....');
+        }
+    </script>-->
+    Function expression (Функциональные выражения)
+    <script>
+        var f = function (параметры){
+            //тело функции
+        };
+        var sayHi=function(person){
+            alert("Привет," + person);
+        };
+        sayHi('Вася');
+        
+    </script>
+
+
+</body>
+</html>
