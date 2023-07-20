@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1
+    <!--<script>
+        const array1 =['1','2','3'];
+        const array2 = ['4','5','6'];
+        const array3 = array1.concat(array2);
+        console.log(array3);
+    </script>
+    2
+    <script>
+        const array1 =['1','2','3'];        
+        const reversed = array1.reverse();
+        console.log('reversed', reversed);
+    </script>
+    3
+    <script>
+       let number = [1,2,3];
+       number.push(4,5,6);
+       alert (number); 
+    </script>
+    4
+    <script>
+        let number = [1,2,3];
+        number.unshift(4,5,6);
+        alert (number); 
+     </script>
+     5
+    <script>
+        let massiv =[1,2,3];
+        console.log(massiv[1]);
+        console.log(massiv[massiv.length-1]);
+        console.log(massiv.at(-1));
+    </script> -->
+    Метод splice
+    1. 1.2.3
+    <!--<script>
+        let arr= [1,2,3,4,5];
+        arr.splice(3,3); 
+        alert(arr);
+    </script>
+    2. 4.5
+    <script>
+        let arr= [1,2,3,4,5];
+        arr.splice(0,3); 
+        alert(arr);
+
+    </script>
+    3. 1.4.5
+    <script>       
+        let arr = [1,2,3,4,5]; 
+        arr.splice (1,2);
+        alert(arr);
+    </script>
+    4. 2,3,4
+    <script>
+        let arr = [1,2,3,4,5]; 
+        alert(arr.slice(1,4));
+        alert(arr);
+    </script>
+    5. 1,2,3, a .b .c . 4. 5  
+    <script>
+        let arr = [1,2,3,4,5]; 
+        arr.splice(3,0, 'a','b','c');
+        alert(arr);
+
+    </script>-->
+    6. Дан массив 1,2,3,4,5, надо преобразовать в массив [1.a.b.2.3.4.c.5.e ]
+    <script>
+        let arr = [1,2,3,4,5]; 
+        arr.splice(1,0,'a','b');
+        arr.splice(6,0,'c');
+        arr.splice(8,0,'e');
+        alert(arr);
+
+    </script>
+    
+    
+</body>
+</html>

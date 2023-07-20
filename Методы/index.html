@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<script>
+       let fruits = ["Яблоко", "Апельсин","Груша"];
+       alert (fruits.shift());//удаляем Яблоко и выводим его
+       alert (fruits); // апельсин, груша
+    </script>
+    <script>
+        let fruits = [ "Апельсин", "Груша"];
+        fruits.ushift ('Яблоко');
+
+    </script>
+    Заполнение массива:
+    <script>
+        var arr = [];
+        console.log(arr);
+        for(i=0; i<10; i++) {
+            arr[i]= i+1;
+        }
+        console.log(arr); //[1,2,3,4,5,6,7,8,9,10]
+    </script>
+    Перебор элементов:
+    <script>
+        var arr = ["Яблоко", "Апельсин", "Груша"];
+        for (i=0; i<arr.length; i++) {
+            alert(arr[i]);
+        }
+    </script>
+    Многомерные массивы
+    <script>
+        let matrix =[
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ];
+        alert(matrix[1][1]); //5, центральный элемент
+    </script>
+    Метод concat
+    <script>
+        const array1 =['a','b','c'];
+        const array2 = ['d','e','f'];
+        const array3 = array1.concat(array2);
+        console.log(array3);
+    </script>
+     Метод reverse
+     <script>
+        const array1 =['one','two','three'];
+        console.log('array1:', array1);
+        const reversed = array1.reverse();
+        console.log('reversed', reversed);
+     </script>
+     Метод join
+     <script>
+        const elements = ['Fire','Air', 'Water'];
+        console.log(elements.join()); //"Fire,Air,Water"
+        console.log(elements.join('')); //"FireAirWater"
+        console.log(elements.join('-')); //"Fire-Air-Water"
+     </script>-->
+     Метод slice
+     <!--<script>
+        let arr =['Я',"изучаю","JavaScript"];
+        arr.splice(1,1); //начиная с индекса 1, удалить 1 эелемент
+        alert(arr); // выводит "Я", "JavaScript"
+     </script>
+     Если хоти удалить и сразу добавить: 
+     <script>
+        let arr = ["Я","изучаю", "JavaScript", "прямо", "сейчас"]; //удалить 3 первых элемента и заменить их другими
+        arr.splice(0,3, 'Давай', 'танцевать');
+        alert(arr); //теперь ["Давай", "танцевать", "прямо", "сейчас"]
+     </script>
+     Если мы не хотим удалять, а только добавить изменив порядок элементов:
+     <script>
+        let arr =["Я","изучаю", "JavaScript"];
+        //с индекса 2
+        // удалить 0 элементов
+        // вставить "сложный, "язык"
+        arr.splice(2,0,"сложный","язык");
+        alert(arr);
+        // "Я","изучаю", "сложный, "язык", "JavaScript"
+     </script>-->
+     slice так же возвращает новый массив в который копирует все элементы с индекса start до end (не включая end)
+     <script>
+        let arr = ['t','e','s','t'];
+        alert(arr.slice(1,3));
+        //e.s.(копирует с 1 до 3)
+        alert(arr.slice(-2));
+        //s. t. (копирует с -2 до конца)
+    </script>
+</body>
+</html>
