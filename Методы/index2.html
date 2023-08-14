@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методы Every, Some, Fill, Reduce</title>
+</head>
+<body>
+    <!--Метод Array.isArray - возвращает true  если объект является массивом
+    <script>
+      Array.isArray([]);
+      Array.isArray([1]);
+      Array.isArray(new Array());
+      Array.isArray({});
+      Array.isArray(null);
+      Array.isArray(undefined);
+      Array.isArray(17);
+      Array.isArray("Array");
+    </script>
+    Метод every() проверяет все элементы массива через заданную функцию. Возвращает логическое значение
+    <script>
+        const array1= [1,30,39,29,10,13];
+        const isBelow = (currentValue) => currentValue <40;
+        console.log(array1.every(isBelow));// true, т.к. все значения меньше 40
+    </script>
+    Метод some() проверяет, проходит ли хотя бы один эелемент в массиве проверку через заданную функцию. И если ДА возвращает логическое значение true
+    <script>
+      const array= [1,2,3,4,5];
+        const even = (element) => element %2 === 0;
+        console.log(array. some (even));// true  
+    </script>
+    Example:
+    <script>
+        let array = [2,-1, 4, 214, 15, 27];
+        const isBelow = (currentValue) => currentValue >0;
+        console.log(array.every(isBelow));
+    </script>
+    <script>
+        const array1= [1,2,3,4,5,-1,-5];
+        const even = (element) => element <0;
+        console.log(array1. some (even)); 
+    </script>
+    Метод reduce/reduceRight 
+    <script>
+        let myAwesomeArray = [1,2,3,4,5];
+        let res = myAwesomeArray.reduce((total,value) => total*value); //1*2*3*4*5
+        console.log(res);
+    </script>
+    Example2:
+    Дан массив. Найти сумму
+    <script>
+        let mass =[10,12,5,8,15];
+        let sum = mass.reduce((total,value) =>total+value);
+        console.log(sum);
+    </script>
+
+    Дан массив. Найти сумму первых Х элементов до первого нуля
+    <script>
+        let array =[4,5,11,15,0,12,47,20];
+        let isNull =false;
+        let sum = array.reduce ((sum, item) =>{
+            if (item ==0){
+                isNull= true;
+            }
+            if (!isNull){ //isNull ==false
+            return sum + item;
+        }
+        else{
+            return sum;
+        }
+        });             
+        
+        console.log(sum); 
+    </script>
+    Метод fill
+    <script>
+        let arr2= new Array(10);
+        console.log(arr2[0]);
+        console.log(arr2.length);//выведет 10 как длину, значения будут undefined
+        let arr= new Array(10).fill().map ((item, index) =>index);
+        console.log(arr); // выведет индексы от 0 до 9 
+    </script>
+    Двумерный массив
+    <script>
+        let items =[[1,2], [3,4], [5,6]];
+        console.log(items [0] [0]); //1
+        console.log(items [0] [1]); //2
+        console.log(items [1] [0]); //3
+        console.log(items [1] [1]); //4
+    </script>
+    <script>
+        let studentsData =[['Андрей', 24], ['Настя', 23],];
+        studentsData.push(['Даня', 24]);
+        console.log(studentsData); //вывод Андрей24, Настя 23 , Даня 24 (добавит Даню)
+
+        let studentsDataNew =[['Андрей', 24], ['Настя', 23],];
+        studentsDataNew[1].push ('привет');
+        console.log(studentsDataNew); //вывод Андрей24, Настя 23 привет,
+    </script>
+    Example 3:
+    <script>
+        let studentsData =[['Андрей', 24], ['Настя', 23],['Даня', 24] ];
+        studentsData.pop();
+        console.log(studentsData);// Даня удалился
+
+        let studentsDataNew =[['Андрей', 24], ['Настя', 23],];
+        studentsDataNew[1].pop ();
+        console.log(studentsDataNew); // возвраст Насти удалился
+    </script>
+    <script>
+        let studentsData =[['Андрей', 24], ['Настя', 23], ['привет'],]; 
+        //проходим по элементам ВНЕШНЕГО массива
+        for(let i=0; i <studentsData.length; i++){
+            //вычисляем длину внутреннего массива
+            let innerArrayLength =studentsData[i].length;
+            //проходим по элементам внутреннего массива
+            for (let j=0; j<innerArrayLength; j++){
+                console.log(studentsData[i] [j]);
+            }
+        }        
+    </script>
+    Более короткая запись (см. ниже) через For..of :
+    <script>
+        let studentsData2 =[['Андрей', 24], ['Настя', 23],];
+        for (let i of studentsData2){
+            for (let j of i){
+                console.log(j);
+            }
+        }
+    </script>
+    То же самое но при помощи метода FOREACH():
+    <script>
+        let studentsData =[['Андрей', 24], ['Настя', 23],]; // перебираем элементы массива studentsData
+        studentsData.forEach((student) => {
+            student.forEach((data) =>{
+                console.log(data);
+            });
+        });
+    </script>-->
+    Самый простой метод Flat (результат тот же), но выглядин как одномерный массиов -в одну строку:
+    <script>
+        let studentData = [['Андрей', 24], ['Настя', 23],];
+        let newArray =studentData.flat();
+        console.log(newArray);  
+    </script>
+
+
+
+
+</body>
+</html>
