@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1. Дан числовой массив [1,-9,8,7,-15]. Что больше сумма положительных чисел или модуль суммы отрицательных чисел. 
+    <script>
+       let array = [1,-9,8,7,-15];
+        let sumPos = 0;
+        let sumNeg = 0;
+        let positive = array.filter(item => item > 0).map(item=>sumPos+=item);
+        let negative = array.filter(item=>item<0).map(item=>sumNeg+=item);
+        let comparison = sumPos > Math.abs(sumNeg) ? sumPos : sumNeg;
+        console.log(comparison);  
+    </script>
+    2. Дан числовой массив [1,4,5,0,7,0]. Удалить все нулевые элементы из массива.  
+     <script>
+        let mass = [1,4,5,0,7,0];
+        mass = mass.filter(item => item !=0);
+        console.log(mass); 
+     </script>
+    3.Дан числовой массив [1,4,5,0,7,0]. В массиве чисел найти самый большой элемент, не используя функцию sort(). 
+    <script>
+
+    
+        let mas = [1,4,5,0,7,0];
+            let max = -Infinity;
+            for(let item of mas){
+                max = item > max ? item : max;
+            }
+        console.log(max); 
+    </script>
+    4.Дан числовой массив. Поменять максимальный и минимальный элемент местами. 
+    <script>
+        let arr = [1,4,5,0,7,8];
+        let max = -Infinity, min = Infinity;
+        let maxInd, minInd;
+        for(let i = 0; i < arr.length; i++) {
+            if(arr[i] >= max){
+                max = arr[i];
+                maxInd = i;
+            }
+            if(arr[i]<= min){
+                min = arr[i];
+                minInd = i;
+            }
+        }
+        arr[maxInd] = min;
+        arr[minInd] = max;
+        console.log(arr); 
+    </script>
+    5.Дан числовой массив. Вывести все элементы, которые больше предыдущего элемента.
+    <script>
+       let arr = [1,4,3,0,9,8];
+        for(let i =1; i< arr.length;i++) {
+            arr[i]> arr[i-1]? console.log(arr[i]):"";
+			/*if(arr[i]> arr[i-1]) {
+				console.log(arr[i]);
+			}*/
+        } 
+    </script>
+    7.Дан числовой массив и 2 числа N, M, причем N < M. Найти все элементы, которые лежат в интервале от N до M.
+    <script>
+        let mas = [11,45,88,9,0];
+        let N =2, M =50;
+        let filt = mas.filter(item=>(item>N&&item<M)).map(item=>console.log(item));
+    </script>
+
+    Пример:
+    1. Дан массив, найти максимальную сумму цифр значений.
+    <script>
+        let mas = [11,45,88,9,0];
+        let temp =[];
+        let max = -Infinity;
+        mas.forEach(item => {
+            temp.push (String (item). split (''). reduce((a,b) => parseInt(a) +parseInt(b)));
+
+        })
+
+        for(let i=0; i <temp.length; i++) {
+            if (temp [i] >=max){
+                max = temp[i];
+                maxInd =i;
+            }
+        }
+        console.log("Для элемента", mas[maxInd], "сумма его цифр получилась больше всего, а именно:", max);
+    </script>
+    2. Дан числовой массив [1,7,4,2,-9,8]. Заменить каждый эелемент массива с нечетным индексом на ноль
+    <script>
+        let arr = [1,7,4,2,-9,8];
+        arr= arr.map((item, index) =>
+        item= index %2 !=0 ? 0: item);
+        console.log(arr);
+
+        // ниже тоже самое в старом синтаксисе
+        for (let i=0; i< arr.length; i++){
+            if(i % 2 !=0){
+                arr[i] = 0;
+            }
+        }
+        console.log(arr);
+    </script>
+    3. Дано предложение, вывести слова в обратном порядке "Мама мыла раму"
+    <script>
+        let str = "Мама мыла раму";
+        console.log(str.split(' '). reverse(). join(' '));
+        
+    </script>
+    4.Дана строка. Подсчитать количество цифр встречающихся в строке.
+    <script>
+        let str = "Сегодня 1 был хороший 2 день";
+        let mas= str.split (' '); 
+        let counter =0;
+        for(let i=0; i < mas.length; i++)
+            {
+                if (!isNaN (mas[i]/1)){
+                counter++;
+                }
+            }
+        console.log(counter);
+        
+    </script>
+    5. Дано слово. Высчитать количество повторяющихся символов в слове
+    <script>
+        let str ="водоворотоподобно";
+        let array = str.split('');
+        let set = new Set(array);
+        let newStr =Array.from(set). join('');
+        //*console.log(str.length);
+        //*console.log(newStr.length);
+        console.log(str.length - newStr.length);
+    </script>-->
+    6. Даны 2 слова, показать буквы которые встречаются в обоих словах. 
+    <script>
+        let str1 = "Кошка";
+        let str2 = "Картошка";
+        let str1New= str1.toLowerCase().split("").filter(item => !str2.includes (item)) .join ("");
+        let str2New= str2.toLowerCase().split("").filter(item => !str1.includes (item)) .join ("");
+
+        console.log(str1New, str2New);
+
+        
+    </script>
+</body>
+</html>
