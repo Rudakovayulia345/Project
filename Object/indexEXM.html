@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <!--1. Создать пустой объект. Добавить свойство NAME  со значение John. Добавить св-во surname со значением Smith. Изменить значение свойства name на Pete. Удалить св-во name из объекта.
+    <script>
+        let user = {};
+       
+        user.name = "John",
+        user.surname = "Smith", 
+        
+        console.log(user);
+
+        user.name= "Pete";
+        console.log(user);
+
+        delete user.name;
+        console.log(user);
+
+    </script>
+    2. Дан объект с зарплатами сотрудников. Найти наибольшую зарплату с исп. for...in 
+    <script>
+        let sal ={
+            John: 100,
+            Ann: 160,
+            Peter: 130
+         };
+
+        let max =-Infinity;
+        for(let key in sal){
+            max = sal[key]> max ? sal[key]: max;
+        };        
+
+        console.log(max); 
+
+    </script>
+    3. Умоножить все числовые значения на 2.
+    <script>
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+        for (let key in menu){
+            if(typeof menu[key] =='number'){
+                menu[key] *=2;
+            }
+            console.log(menu[key]);    
+        }
+        
+    </script>-->
+
+    <script>
+        let user = {
+            name: "Иван",           
+        };
+
+        let user2 = user;
+        console.log(user);  
+        console.log(user2); 
+
+        user.name ="Петя";
+        console.log(user);  
+        console.log(user2); 
+
+        user2.name ="Олег";
+        console.log(user);  
+        console.log(user2);
+    </script>
+</body>
+</html>

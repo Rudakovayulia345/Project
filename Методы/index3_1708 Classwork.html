@@ -133,7 +133,7 @@
         //*console.log(str.length);
         //*console.log(newStr.length);
         console.log(str.length - newStr.length);
-    </script>-->
+    </script>
     6. Даны 2 слова, показать буквы которые встречаются в обоих словах. 
     <script>
         let str1 = "Кошка";
@@ -144,6 +144,22 @@
         console.log(str1New, str2New);
 
         
+    </script>-->
+    7. Дана строка состоящая из нескольких слов, где может быть несколько пробелов. Убрать все лишние, оставить только 1 пробел
+    <script>
+        /*let sentence ="Мама    мыла     раму";
+        sentence = sentence. split (" ");
+        console.log(sentence);
+        sentence =sentence.filter (item => item). join(' ');
+        console.log(sentence);*/
+
+        //в новом синтаксисе см.ниже
+        let sentence ="Мама    мыла     раму";
+        console.log(sentence);
+        sentence = sentence.split(""). filter ((letter, i, array) =>
+        letter == " " && array [i+1] == " " ? "": " "). join ("");
+        console.log(sentence);
     </script>
+
 </body>
 </html>
