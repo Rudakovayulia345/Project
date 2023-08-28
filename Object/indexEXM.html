@@ -53,7 +53,7 @@
             console.log(menu[key]);    
         }
         
-    </script>-->
+    </script>
 
     <script>
         let user = {
@@ -71,6 +71,65 @@
         user2.name ="Олег";
         console.log(user);  
         console.log(user2);
+    </script>
+    <script>
+        let person ={
+            name: "John",
+            age: 30,
+            city: "New York",
+            phone: "123-456-7890",
+        };
+        function showPersonInfo(person){
+            console.log('Name:'+ person.name);
+            console.log('Age:'+ person.age);
+            console.log('City:'+ person.city);
+            console.log('Phone:'+ person.phone);
+        }
+        showPersonInfo(person);
+    </script>
+    <script>
+        let person ={
+            name: "John",
+            age: 30,
+            city: "New York",
+            phone: "123-456-7890",
+            sayInfo(){
+                    console.log('Hello, my name'+ this.name,"I'm", this.age, 'years old', 'I live in', this.city, 'and you can call me', this. phone);
+            },
+        };
+        person.sayInfo();
+        
+    </script>
+    Создать функцию, которая принимает массив объектов с полями name и age и возвращает массив имен людей, возраст которых больше 25 лет
+    <script>
+        let people =[
+            {name: "John", age: 30},
+            {name: "Bob", age: 25},
+            {name: "Alice", age: 28},
+        ];
+        function getNames(people){
+            let result = [];
+            for(let i =0; i<people.length; i++){
+                if(people[i].age> 25){
+                    result.push(people[i]. name);
+                }
+            }
+            return result;
+        }
+        console.log(getNames(people));
+
+    </script>-->
+    Создать массив объктов с полями name и age, заполнить произвольными значениями,  и вывести длину массива в консоль. 
+    <script>
+        let mas =[
+            {name: 'Lens', age:20},
+            {name: 'Geogr', age:22},
+            {name: 'Charly', age:24},
+            {name: 'Harry', age:21},
+            {name: 'Linn', age:30},
+            {name: 'Mike', age:28},
+        ];
+        console.log(mas.length);
     </script>
 </body>
 </html>

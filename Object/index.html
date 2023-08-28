@@ -106,7 +106,7 @@
 
        console.log(user);
        console.log(clone);
-    </script>-->
+    </script>
     Методы объекта
     <script>
         const catVasya ={
@@ -116,10 +116,14 @@
             weight:3,
             mew: function(){
                 console.log('мяу-мяу');
-            }
+            },
+            sayName(){
+                console.log('Привет, я кот '+ this.name,"мой возраст", this.age, this.color, "цвет", "а мой вес", this. weight);
+            },
+           
         };
-        catVasya.mew(); //вызов метода
-    </script>
+        catVasya.sayName(); //вызов метода
+    </script>-->
 
 
 </body>
