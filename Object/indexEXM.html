@@ -118,7 +118,7 @@
         }
         console.log(getNames(people));
 
-    </script>-->
+    </script>
     Создать массив объктов с полями name и age, заполнить произвольными значениями,  и вывести длину массива в консоль. 
     <script>
         let mas =[
@@ -130,6 +130,20 @@
             {name: 'Mike', age:28},
         ];
         console.log(mas.length);
+    </script>-->
+    <script>      
+        
+        function newCar(make = "Eagle", model ="Talon TSi", year =1993){
+            make: "Eagle";
+            model: "Talon TSi";
+            year: 1993;
+        };
+        let mycar =newCar ("Eagle", "Talon TSi", 1993);
+        console.log(mycar.make);
+        console.log(mycar.model);
+        console.log(mycar.year);
+
+
     </script>
 </body>
 </html>

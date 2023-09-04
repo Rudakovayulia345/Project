@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>методы объекта</title>
+</head>
+<body>
+    <!--<script>
+        const userData ={
+            name: "John",
+            age: 25,
+            isOnline: true,
+        }
+        console.log(Object.values(userData)); //возвращает ["John", 25, true]
+    </script>
+    <script>
+        const userData ={
+            name: "John",
+            age: 25,
+            isOnline: true,
+        }
+        console.log(Object.entries(userData)); //возвращает [["name", "John"], ["age", 25] , ["isOnline", true]]
+    </script>
+    <script>
+        const person ={
+            name: "James",
+            age: 28,
+            available: false
+        }
+        console.log(Object.keys(person)); //возвращает ["name", "age", "availabel"]
+    </script>
+ Метод Object.is позволяет сравнить одинаковы ли 2 значения
+ <script>
+    console.log (Object.is(50,50)); //истинно true
+    let too = 0;
+    console.log (Object.is(too,100)); //истинно false
+    let bar = "John";
+    console.log (Object.is(top, bar)); //истинно false
+ </script>
+    Сравнение объектов
+    <script>
+        //создается один объект
+        const book = {title: "Дюна"};
+        // создается другой объект
+        const anotherBook = {title: "Дюна"};
+        console.log(book === anotherBook); // false
+        console.log (Object.is (book, anotherBook)); //false
+
+    </script>
+    При создании ссылки на объект - объекты будут равны
+    <script>
+        //создается один объект
+        const book = {title: "Дюна"};
+        // в anotherBook записывается ссылка на объект 
+        const anotherBook = book;
+        console.log(book === anotherBook); // true
+        console.log (Object.is (book, anotherBook)); //true
+
+    </script>
+    Глубокое Клонирование
+    1. 
+    <script>
+        let user = {name: "John",
+            sizes: {height:182,
+            width: 50
+        }
+    };
+    let clone = Object.assign({}, user);
+    console.log(user);
+    console.log(clone);
+
+    user.name ="Lena";
+    console.log(user.name);
+    console.log(clone.name);
+
+    user.sizes.height =200;
+    console.log(user.sizes.height);
+    console.log(clone.sizes.height);
+
+    </script>
+    2. 
+    <script>
+         let objects = {name: "John",
+            sizes: {height:182,
+            width: 50
+        }
+    };
+    let deep =structuredClone(objects);
+    console.log(objects.sizes.height);
+    console.log(deep.sizes.height);
+
+    objects.sizes.height=183;
+    console.log(objects.sizes.height);
+    console.log(deep.sizes.height);
+
+    deep.sizes.height= 184;
+    console.log(objects.sizes.height);
+    console.log(deep.sizes.height);
+
+    </script> 
+    Опциональная цепочка
+    <script>
+        let user = {}; //пользователь без свойств "address"
+        //alert(user.address.street); //Ошибка!
+
+        let user1 = {}; //пользователь без свойств "address"
+        alert(user1?.address?.street);//undefined (без ошибки)
+
+
+    </script>
+    <script>
+        let userAdmin = {
+            admin(){
+                alert ("Я админ");
+            }
+        };
+        let userGuest ={};
+
+        userAdmin.admin?.(); //Я админ
+        userGuest.admin?.();//ничего не произойдет (такого метода нет)
+    </script>-->
+    <script>
+        let key = "firstName";
+        let user1= {firstName: "John"};
+        let user2 =null;
+        alert (user1?.[key]); //John
+        alert (user2?.[key]); // undefined
+    </script>
+
+</body>
+</html>

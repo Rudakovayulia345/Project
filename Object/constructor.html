@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    Функция конструктор
+    <!--Функция конструктор
     <script>
         function User(name){
             this.name = name;
             this.sayHi= function(){
-                alert ('Меня зовут:' +this.name);
+                alert ('Меня зовут:' +this.name);//this.name аналогично записи .john
             };
         }
         let john = new User ('John');
@@ -23,6 +23,18 @@
 
         let mike = new User ('Mike');
         mike.sayHi(); //Меня зовут: Mike
+    </script>-->
+    Значения по умолчанию
+    <script>
+        function Hero (name = "Герой"){
+            this.name = name; //this.name =name || "Герой"
+        }
+        let Ivan = new Hero ("Иван");
+        let Hto_to =new Hero();
+
+        alert(Ivan.name);//Иван 
+        alert(Hto_to.name);//Герой 
+
     </script>
 </body>
 </html>
