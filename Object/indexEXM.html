@@ -130,20 +130,108 @@
             {name: 'Mike', age:28},
         ];
         console.log(mas.length);
-    </script>-->
+    </script>
+    Есть объект, надо создать функцию констурктор  с полями make, model, year
     <script>      
-        
-        function newCar(make = "Eagle", model ="Talon TSi", year =1993){
-            make: "Eagle";
-            model: "Talon TSi";
-            year: 1993;
+     
+        function Car (make, model, year){
+            this.make =make;
+            this.model= model;
+            this.year= year; 
         };
-        let mycar =newCar ("Eagle", "Talon TSi", 1993);
+        let mycar = new Car ("Eagle", "Talon TSi", 1993);
+        
         console.log(mycar.make);
         console.log(mycar.model);
         console.log(mycar.year);
+    </script>
+    Есть функция конструктор, на её базу надо добавить методы вычисления (sub), умножения (mul), деленеи (div), возведение в степень (degree). Проверить работу методов
+    <script>
+        function Calculator(a,b){
+            this.a= a,
+            this.b =b,
+            this.add = function(){
+                return this.a+ this.b;
+            }
+            this.sub = function(){
+                return this.a- this.b;
+            }
+            this.mul = function(){
+                return this.a* this.b;
+            }
+            this.div = function(){
+                return this.a / this.b;
+            }
+            this.degree = function(){
+                return this.a ** this.b;
+                
+            }
+        }
+        let calculator =new Calculator(11,5);
+        console.log(calculator.add());
+        console.log(calculator.sub());
+        console.log(calculator.mul());
+        console.log(calculator.div());
+        console.log(calculator.degree());
 
-
+    </script>
+    Все функции выше, надо переписать на стрелочные
+    <script>
+       function Calculator(a,b){
+            this.a= a,
+            this.b =b,
+            this.add = () => this.a+this.b;
+            this.sub = () => this.a-this.b;
+            this.mul = () => this.a*this.b;
+            this.div = () => this.a/this.b;
+            this.degree = () => this.a**this.b;
+        }
+        let calculator =new Calculator(11,5);
+        console.log(calculator.add());
+        console.log(calculator.sub());
+        console.log(calculator.mul());
+        console.log(calculator.div());
+        console.log(calculator.degree()); 
+    </script>
+    <script>
+        function Calculator(){
+            this.add =function(a,b){
+                return a+b;
+            }
+            this.sub =function(a,b){
+                return a-b;
+            }
+            this.mul =function(a,b){
+                return a*b;
+            }
+            this.div =function(a,b){
+                return a/b;
+            }
+            this.degree =function(a,b){
+                return a**b;
+            }
+        }
+        let calculator =new Calculator();
+        console.log(calculator.add(12,2));
+        console.log(calculator.sub(9,5));
+        console.log(calculator.mul(10,9));
+        console.log(calculator.div(5,1));
+        console.log(calculator.degree(3,3)); 
+    </script>-->
+    <script>
+       function Calculator(){
+            this.add =(a,b) => a+b;
+            this.sub = (a,b) => a-b;
+            this.mul = (a,b) => a*b;
+            this.div = (a,b) => a/b;
+            this.degree = (a,b) => a**b;
+        }
+        let calculator =new Calculator();
+        console.log(calculator.add(12,2));
+        console.log(calculator.sub(9,5));
+        console.log(calculator.mul(10,9));
+        console.log(calculator.div(5,1));
+        console.log(calculator.degree(3,2));  
     </script>
 </body>
 </html>

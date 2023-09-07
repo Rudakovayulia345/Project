@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Когда свойство - это Объект (newAuthor)
+    <script>
+        let newAuthor ={
+            name: "Сергей",
+            surname: "Петров",
+        };
+        let book ={
+            "main title": "Новая книга",
+            author: newAuthor,
+        }
+         console.log(book.author);
+         console.log(book.author.name);
+    </script>-->
+    Когда свойство - Функция-конструктор (Person)
+    <script>
+    function Person (name, age, sex){
+        this.name =name;
+        this.age =age;
+        this.sex =sex;
+    }
+
+     let rand =new Person("Rand McKinnon", 33, "M");
+     let ken =new Person("Ken Jonson's", 39, "M");
+
+     console.log(rand);
+     console.log(ken.age);
+
+     function Car (make, model, year, owner){
+        this.make =make;
+        this.model = model;
+        this.year = year;
+        this.owner =owner;
+        this.displayCar = displayCar; //добавить в Car
+     }
+      var car1 = new Car ("Eagle", "Talon TSL", 1993, ken);
+      var car2 = new Car ("Ford", "AMG-4", 1998, rand);
+
+      console.log(car1.owner);
+      console.log(car2.owner.name);
+
+      function displayCar(){
+        let result = "A beautiful" + " " + this.year + " "+ this.make + " "+ this.model;
+        console.log(result);
+      }
+
+      car1.displayCar();
+      car2.displayCar();
+
+
+    </script>
+</body>
+</html>
