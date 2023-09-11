@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hero" >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam delectus vel unde molestias hic animi excepturi consequatur quas neque voluptates ipsum perferendis esse ratione incidunt quidem, mollitia ipsam nesciunt debitis necessitatibus 
+    </p>
+    <div> First div </div>
+    <div> Second div </div> 
+    
+    <div class="point"> First div </div>
+    <div class="point"> Second div </div> 
+
+    <div class="contents">
+        <ul class = "book">
+            <li class= "chapter"> Глава 1</li>
+            <li class= "chapter"> Глава 2</li>
+            <li class= "chapter"> Глава 3</li>
+            <li class= "chapter"> Глава 4</li>
+        </ul>
+    </div>
+
+    <script>
+        let i=document.getElementById("hero");
+         console.log(i); 
+ 
+        let divs =document.getElementsByTagName('div');
+        console.log(divs);
+
+        let points =document.getElementsByClassName('point');
+        console.log(points);
+
+        let chapter= document.querySelector('.chapter');
+        console.log(chapter);
+
+        let chapter1= document.querySelectorAll('.chapter');
+        console.log(chapter1);
+    </script>
+
+</body>
+</html>
