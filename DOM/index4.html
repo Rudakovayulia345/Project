@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методы</title>
+</head>
+<body data-about="Elefants">
+    <!--<div id="div"></div>
+
+    <script>
+        let div=document.querySelector('div');
+        div.insertAdjacentHTML('beforebegin', `<p>Привет</p>`);//добавляет текст сверху
+        div.insertAdjacentHTML('afterend', `<p>Пока</p>`);//снизу
+    </script>
+
+    <ul id="birds">
+        <li>Orange-winged parrot</li>
+        <li class="endangered">Philippine eagle</li>
+        <li>Great white pelican</li>
+    </ul>
+
+    <script>
+        const birds = document.querySelectorAll('li');
+
+        for(const bird of birds){
+            if(bird.matches('.endangered')){
+                console.log(`The ${bird.textContent} is endangered!`);
+            }
+        }
+    </script>
+    <div class="contents">
+        <ul class="book">
+            <li class="chapter">Глава 1</li>
+            <li class="chapter">Глава 2</li>
+        </ul>
+    </div>
+
+    <script>
+        let chapter  = document.querySelector('.chapter');//li
+        console.log(chapter.closest('.book')); //ul
+        console.log(chapter.closest('.contents')); //div
+    </script>
+
+     <button> Hello World</button>
+     <script>
+        const button =document.querySelector('button');
+        button.setAttribute('name', "helloButton");//усатновить атрибут
+        button.setAttribute('disabled', "");
+
+        console.log(button);
+     </script>
+
+     <div id="div1">Hi Champ!</div>
+
+     <script>
+        const div1 =document.getElementById('div1');
+        const exampleAttr =div1.getAttribute('id'); //div1
+        console.log(exampleAttr);
+        const align =div1.getAttribute('align'); //null т.к. нет такого атрибута
+        console.log(align);
+     </script>
+
+     <div id="foo" name="name"></div>
+     <script>
+        const foo = document.getElementById('foo');
+        if(foo.hasAttribute('name')){
+            alert('hello');
+            console.log('Yes');
+            console.log('Super');
+        }
+     </script>-->   
+
+
+</body>
+<script>
+    console.log(document.body.dataset.about); // Elefants Работает при присваивании своего атрибута через data, к тегу присваиваем класс )(data-about="Elefants")
+ </script>
+</html>
