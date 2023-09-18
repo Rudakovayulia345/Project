@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXMP 2</title>
+</head>
+<body>
+    <!--1. Написать код как получить элемент div?
+     ul?
+     второй li (с именем Piter)?
+
+    <div>Пользователи:</div>
+    <ul>
+        <li>John</li>
+        <li>Piter</li>
+    </ul>
+    <script>
+       let divs =document.getElementsByTagName('div');
+        console.log(divs); 
+        
+       let ul = document.getElementsByTagName('ul');
+        console.log(ul);
+
+        let li = document.getElementsByTagName('li');
+        console.log(li[1]);           
+    </script>
+
+    2. Необходимо получить все элементы li на странице и добавить каждому из них класс 'List-item'
+    <div>
+        <ol>
+            <li>Пункт</li>
+            <li>Пункт</li>
+        </ol>
+    </div>
+
+    <script>
+        let mas=document.querySelectorAll('li');
+        for (let i=0; i<mas.length; i++){
+            mas[i].classList.add('list-item');
+            console.log(mas[i]);
+        }
+    </script>
+    3. Необходимо получить все элементы а на странице и добавить каждому атрибут "target=_blank"
+    <div>
+        <ol>
+            <li>Пункт</li>
+            <a href="abc">Ссылка 1</a>
+            <li>Пункт</li>
+            <a href="abc">Ссылка 2</a>
+        </ol>        
+    </div>
+    <script>
+
+        let mas = document.querySelectorAll('a');
+        for (let i=0; i<mas.length; i++){
+            mas[i].setAttribute('target', '_blank'); 
+          
+        }         
+    </script>-->
+
+    4. Необходимо получить все элементы  с классом "example-class" и установить им высоту 100px
+    <div>
+        <ol>
+            <li class="example-class">Пункт1</li>
+            <a href="abc">Ссылка 1</a>
+            <li class="example-class">Пункт2</li>
+            <a href="abc">Ссылка 2</a>
+            <li class="example-class">Пункт3</li>
+        </ol>        
+    </div>
+    <script>
+        let height=document.querySelectorAll('li');
+        for(let i=0; i<height.length; i++){
+            height[i].style.height= '100px;'
+        }
+    </script>
+
+</body>
+</html>

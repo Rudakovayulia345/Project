@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples</title>
+</head>
+<body>
+    <!--1. Необходимо получить доступ к элементу страницы по его ID и изменить его содержимое на "Hello World!"
+
+    <div>
+         <h3 id="js">Learning Java Script every day</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, nam.</p>
+    </div>
+    <script>        
+        const js = document.getElementById('js');
+        js.innerHTML="Hello world!"
+     </script>-->
+
+    2. Создать новый элемент "p" с текстом "Этот текст был создан динамически" и добавить его на страницу
+    <div>
+        <h3 id="js">Learning Java Script every day</h3>
+        <p id="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, nam.</p>
+   </div>
+   <script>
+    //ниже 2 варианта выполнения, оба верны
+        //let div=document.querySelector('div');
+        //div.insertAdjacentHTML('beforebegin', `<p>Этот текст был создан динамически</p>`);
+
+        let newP= document.createElement('p');
+            newP.innerHTML = 'Этот текст был создан динамически';
+            text.after(newP);
+   </script>
+
+   <!--3. Необходимо получить Первый элемент 'div' на странице и установить ему фоновый цвет 'red'
+   <div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+    <script>
+        let div =document.querySelector('div');      
+        div.style.background ="red";
+        console.log(document.div);        
+    </script>-->
+
+</body>
+</html>
