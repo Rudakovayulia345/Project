@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События</title>
+</head>
+<body>
+    <!--<input value="Нажми меня" onclick ="alert('Клик!')" type="batton">
+
+
+    <input type="button" onclick="countRabbits()" value="Считать кроликов!">
+    <script>
+        function countRabbits(){
+            for(let i=1; i<=5; i++){
+                console.log("Кролик номер" +i);
+            }
+        }
+    </script>
+
+    <input type="button" id="elem" value="Нажми меня!">
+    <script>
+        elem.onclick =function(){
+            console.log('Спасибо');
+        };
+
+        elem.onclick =function(){
+            console.log('Спасибо большое');// перезаписалось на Спасибо большое
+        };
+    </script>
+
+    <input type="button" id="elem" value="Нажми меня!">
+    <script>
+        function handler1(){
+            console.log('Спасибо');
+        }
+
+        function handler2(){
+            console.log('Спасибо ещё раз!');
+        }
+        //назначим 3 обработчика
+        elem.onclick =() => console.log('Привет!');
+        elem.addEventListener('click', handler1); //спасибо
+        elem.addEventListener('click', handler2); //спасибо ещё раз
+    </script>-->
+
+    Добавьте Java Script к кнопке button, чтобы при нажатии элемент *div id="text* исчезал
+    <input type="button" id="hider" value="Нажмите, чтобы спрятать текст">
+    <div id="text">Текст</div>
+    <script>
+        document.getElementById('hider').onclick =function(){
+            document.getElementById('text').style.display ="none";
+        }
+    </script>
+</body>
+</html>

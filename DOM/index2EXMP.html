@@ -58,7 +58,7 @@
             mas[i].setAttribute('target', '_blank'); 
           
         }         
-    </script>-->
+    </script>
 
     4. Необходимо получить все элементы  с классом "example-class" и установить им высоту 100px
     <div>
@@ -71,10 +71,92 @@
         </ol>        
     </div>
     <script>
-        let height=document.querySelectorAll('li');
+        let height=document.querySelectorAll('.example-class');
+        console.log(height);
         for(let i=0; i<height.length; i++){
-            height[i].style.height= '100px;'
+            height[i].style.height= '100px'
         }
+    </script>
+
+    5. Необходимо получить все элементы на странице и вывести их количество на консоль
+    
+    <div>Пользователи:</div>
+    <ul>
+        <li>John</li>
+        <li>Piter</li>
+    </ul>
+
+    <script>
+        let all=document.getElementsByTagName('*');
+        for(let i=0; i<all.length; i++){
+            console.log(all[i]);
+        }
+        console.log(`${all.length}, количество всех элементов`)
+    </script>
+    6. Дан блок, внутри него необходимо создать элемент div с классом item, разместить текст "Элемент внутри" и задать стили. После, добавить данному блоку класс item-1 (использовать setAttribute)
+
+    <div class="block">
+
+    </div>
+    <script>
+        let next = document.createElement('div');
+        let nextBlock= document.querySelector('.block').append(next);
+        next.className = 'item';
+        next.innerHTML= "Элемент внутри";
+        next.style.background="#f8f8f8";
+        next.style.color="blue";
+        next.style.border="solid";
+        next.style.padding="16px";
+
+        next.setAttribute('class','item_1');       
+        console.log(next);
+    </script>
+
+    7. Дан код. Необходимо с помощью querySelector найти праграф с классом text:
+    - вывести в консоль соседний элемент h2:
+    - вывести в консоль родительский элемент content;
+    - вывести в консоль картинку;
+    - вывести в консоль родительский элемент elem 
+    <div class="elem">
+        <img src="img1.png" alt="">
+        <div class="content">
+            <h2 class="heding">Lorem, ipsum dolor.</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis cumque quisquam sit quibusdam quidem repellendus!</p>
+        </div>
+    </div>
+    <script>
+        let par= document.querySelector('.text');
+        console.log(par);
+
+        let next =document.querySelector('h2').nextElementSibling;
+        console.log(next);
+
+        let parent =document.querySelector('.content').parentElement;
+        console.log(parent);
+
+        let img =document.querySelector('img');
+        console.log(img);
+
+        let parent1 =document.querySelector('.elem').parentElement;
+        console.log(parent1);
+
+    </script>-->
+    Вывести всех родителей h2. 
+    <div class="item">
+        <div class="elem">
+            <div class="info">
+                <h2 class="subtitle">Lorem ipsum dolor sit amet.</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        let h2=document.querySelector('h2');
+        let parents =[];
+        while(h2.parentElement != null){
+            h2=h2.parentElement;
+            parents.push(h2);
+        }
+        console.log(parents);
     </script>
 
 </body>
